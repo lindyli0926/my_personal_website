@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindy Li</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lindy Li</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#cv">CV</a>
+        <a href="#message">Message</a>
+    </nav>
+    <section id="about">
+        <h2>About</h2>
+        <p>Hello! I’m Lindy Li, a recent graduate from the University of Toronto, majored in Statistics. Welcome to my personal website where you can learn more about me.</p>
+        <p>During my undergrad, I've interned at Meituan, Capgemini, and China Securities Co., Ltd.</p>
+        <p>If you'd like to get in contact with me, feel free to leave a message.</p>
+    </section>
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Check back soon for updates on my blog where I will share insights and experiences from my academic and professional journey.</p>
+    </section>
+    <section id="cv">
+        <h2>CV</h2>
+        <p>You can view my CV <a href="path-to-your-cv.pdf" target="_blank">here</a>.</p>
+    </section>
+    <section id="message">
+        <h2>Message</h2>
+        <form action="your-backend-endpoint" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Lindy Li</p>
+    </footer>
+</body>
+</html>
+
